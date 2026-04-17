@@ -1,6 +1,6 @@
 ---
 name: ios-simulator-runtime-logs
-description: Capture iOS Simulator runtime logs with console-first defaults for `print` and `debugPrint`, plus optional unified-log and dual modes. Use when debugging runtime behavior on iOS Simulator, reading the same logs seen in Xcode, streaming `log stream` output, or saving reproducible log sessions around a repro.
+description: Capture iOS Simulator runtime logs with console-first defaults for `print` and `debugPrint`, plus optional unified-log and dual modes. Use when debugging runtime behavior on iOS Simulator, reading the same logs seen in Xcode, building and installing an Xcode app before capture, handling multi-scheme app flavors safely, streaming `log stream` output, or saving reproducible log sessions around a repro.
 ---
 
 # iOS Simulator Runtime Logs
@@ -15,6 +15,13 @@ channels developers usually inspect in Xcode:
 Keep sessions reproducible, filtered, and saved.
 
 It can also build and install the current Xcode project before capture.
+
+## Why this skill is distinct
+
+- default value path: Xcode-like console logs, not just unified logs
+- integrated Xcode project discovery, build, install, relaunch
+- safe ambiguity handling for multi-flavor apps
+- saved sessions plus stop/summary helpers
 
 ## Core Guidelines
 

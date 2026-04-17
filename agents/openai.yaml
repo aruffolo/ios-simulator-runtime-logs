@@ -1,4 +1,4 @@
 interface:
   display_name: "iOS Simulator Runtime Logs"
-  short_description: "Capture Xcode-like console and simulator log sessions"
-  default_prompt: "Use $ios-simulator-runtime-logs to capture the same logs seen in Xcode from the active iOS Simulator, or switch to unified-log mode when the app uses Logger or OSLog. If multiple app-like schemes are found, ask the user which scheme to use instead of guessing."
+  short_description: "Capture Xcode-like console logs, unified logs, and build-aware simulator sessions"
+  default_prompt: "Use $ios-simulator-runtime-logs for iOS Simulator runtime debugging when the user wants the same logs seen in Xcode, needs to build/install before capture, wants unified-log mode for Logger or OSLog, or needs safe handling of multiple app schemes without guessing."
